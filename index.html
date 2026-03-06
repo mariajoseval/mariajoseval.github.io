@@ -10,59 +10,78 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#0f0f10;
+background:#0c0c0f;
 color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-height:100vh;
 }
 
-.container{
+.header{
 text-align:center;
-max-width:700px;
-padding:50px;
+padding:60px 20px 40px 20px;
+}
+
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+border:3px solid #ff4fd8;
+margin-bottom:20px;
+object-fit:cover;
 }
 
 h1{
 font-size:42px;
-color:#ff2fb3;
+color:#ff4fd8;
 margin-bottom:10px;
 }
 
 .subtitle{
 font-size:20px;
-color:#d8b4ff;
-margin-bottom:25px;
+color:#e6c6ff;
+margin-bottom:20px;
 }
 
 p{
 color:#bbbbbb;
+max-width:600px;
+margin:auto;
 line-height:1.6;
 }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#ff2fb3;
-color:white;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-font-size:16px;
-transition:0.3s;
+.links{
+margin-top:25px;
 }
 
-.button:hover{
-background:#e0009e;
-transform:scale(1.05);
+.links a{
+margin:0 12px;
+color:#e6c6ff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.links a:hover{
+color:#ff4fd8;
+}
+
+.portfolio{
+margin-top:60px;
+display:flex;
+justify-content:center;
+}
+
+iframe{
+width:90%;
+max-width:1000px;
+height:700px;
+border:none;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
 }
 
 .footer{
-margin-top:40px;
-font-size:14px;
+text-align:center;
+margin:50px 0;
 color:#777;
+font-size:14px;
 }
 
 </style>
@@ -71,7 +90,9 @@ color:#777;
 
 <body>
 
-<div class="container">
+<div class="header">
+
+<img class="avatar" src="TU_IMAGEN_AQUI">
 
 <h1>Maria José Valderrama</h1>
 
@@ -83,14 +104,24 @@ Community Manager & Digital Content Creator
 Specialized in social media strategy, digital campaigns and content creation.
 </p>
 
-<a class="button" href="https://mariajoseval.my.canva.site/" target="_blank">
-View My Portfolio
-</a>
+<div class="links">
+
+<a href="http://linkedin.com/in/maría-josé-valderrama" target="_blank">LinkedIn</a>
+
+<a href="mailto:mariajova02@gmail.com">Email</a>
+
+</div>
+
+</div>
+
+<div class="portfolio">
+
+<iframe src="https://mariajoseval.my.canva.site/"></iframe>
+
+</div>
 
 <div class="footer">
 © 2026 Maria José Valderrama
-</div>
-
 </div>
 
 </body>
